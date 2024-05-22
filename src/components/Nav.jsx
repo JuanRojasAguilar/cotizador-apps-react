@@ -1,6 +1,8 @@
-import { useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { getSingleQuestion } from "../hooks/useJson";
+import { PriceContext } from "../context/priceContext";
 
- const Nav = () => {
+const Nav = () => {
   const Styles = {
     container: `
       flex 
@@ -20,7 +22,7 @@ import { useState } from "react";
       hover:underline-offset-8
       text-start
     `,
-    counter : `
+    counter: `
       w-[30%]
       text-center
     `,
@@ -32,19 +34,16 @@ import { useState } from "react";
     `
   }
 
-  const [page, setPage] = useState(0);
-  const [currentPrice, setCurrentPrice] = useState(100);
+  const [page, setPage] = useState(1);
+  const price = useContext(PriceContext);
 
   return (
     <div className={Styles.container}>
       <button className={Styles.button}>Regresar</button>
       <p className={Styles.counter}>{page}/10</p>
-      {currentPrice != 0 && 
-        <p className={Styles.price}>${currentPrice}</p>
-      }
+      <p className={Styles.price}>${price}</p>
     </div>
   )
 }
 
 export default Nav;
-
