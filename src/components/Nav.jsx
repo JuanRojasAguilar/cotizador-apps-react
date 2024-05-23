@@ -1,8 +1,7 @@
-import { useEffect, useState, useContext } from "react";
-import { getSingleQuestion } from "../hooks/useJson";
+import { useContext } from "react";
 import { PriceContext } from "../context/priceContext";
 
-const Nav = () => {
+const Nav = ({ page, setPage, setPriceSelected, priceSelected }) => {
   const Styles = {
     container: `
       flex 
@@ -15,35 +14,58 @@ const Nav = () => {
       items-center
       text-2xl
     `,
+    backField: `
+      w-1/3
+    `,
     button: `
       ml-4
-      w-[30%]
       hover:underline
       hover:underline-offset-8
       text-start
     `,
+    pageField: `
+      w-1/3
+      flex 
+      justify-center
+    `,
     counter: `
-      w-[30%]
       text-center
+    `,
+    priceField: `
+      flex 
+      w-1/3
+      text-end
+      justify-end
     `,
     price: `
       mr-4
-      w-[30%]
       text-end 
-      
-    `
-  }
+    `,
+  };
 
-  const [page, setPage] = useState(1);
   const price = useContext(PriceContext);
+  const handleBack = () => {
+    setPriceSelected(priceSelected.filter(a => indexOf(a) != indexOf(-1)))
+    setPage(page - 1);
+  };
 
   return (
     <div className={Styles.container}>
-      <button className={Styles.button}>Regresar</button>
-      <p className={Styles.counter}>{page}/10</p>
-      <p className={Styles.price}>${price}</p>
+      <div className={Styles.backField}>
+        {page > 1 && (
+          <button className={Styles.button} onClick={() => handleBack()}>
+            Regresar
+          </button>
+        )}
+      </div>
+      <div className={Styles.pageField}>
+        <p className={Styles.counter}>{page}/10</p>
+      </div>
+      <div className={Styles.priceField}>
+        {price > 0 && <p className={Styles.price}>${price}</p>}
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Nav;

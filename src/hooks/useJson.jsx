@@ -1,4 +1,3 @@
-import { useState } from "react";
 import jsonData from "../hooks/questions.json";
 
 const getJson = () => {
@@ -9,4 +8,4 @@ const getSingleQuestion = (id) => {
     return getJson()[id];
 }
 
-export { getSingleQuestion };
+export { getJson, getSingleQuestion };
