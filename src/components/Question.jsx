@@ -9,8 +9,12 @@ const Question = ({
   priceSelected,
   setPriceSelected
 }) => {
-  const data = getSingleQuestion(page - 1);
-
+  let data;
+  if (page != 11) {
+    data = getSingleQuestion(page - 1);
+  } else {
+    data = {};
+  }
   const Styles = {
     container: `
       h-screen
@@ -53,18 +57,15 @@ const Question = ({
 
   const handleClick = (newPrice) => {
     let calc = 0;
+    let newPriceSelected = [...priceSelected, newPrice];
+
     if (page == 1) {
       setMultiplier(newPrice);
     } else if (page == 2) {
-      setPriceSelected([
-        ...priceSelected,
-        newPrice
-      ])
+      setPriceSelected(newPriceSelected)
+      calc = newPriceSelected[0]; 
     } else {
-      setPriceSelected([
-        ...priceSelected,
-        newPrice
-      ])
+      setPriceSelected(newPriceSelected);
       calc = priceSelected.reduce((a, b) => a + b);
     }
     setPrice(calc * multiplier);
@@ -75,7 +76,7 @@ const Question = ({
     <div className={Styles.container}>
       <h1 className={Styles.title}>{data.question}</h1>
       <div className={Styles.buttonContainer}>
-        {data.options.map((option) => {
+        {data.options?.map((option) => {
           return (
             <button
               className={Styles.button}

@@ -26,7 +26,7 @@ const App = () => {
   };
   return (
     <>
-      {!started ? (
+      {(!started && page < 11) ? (
         <Landing onClick={startQuestions} />
       ) : (
         <div className={Styles.app}>
@@ -35,6 +35,8 @@ const App = () => {
               multiplier={multiplier}
               page={page}
               setPage={setPage}
+              priceSelected={priceSelected}
+              setPrice={setPrice}
               setPriceSelected={setPriceSelected}
             />
             <Question
@@ -50,6 +52,10 @@ const App = () => {
           </PriceContext.Provider>
         </div>
       )}
+      {(!started && page >= 11)
+        ? <p>Reporte</p>
+        : <></>
+      }
     </>
   );
 };

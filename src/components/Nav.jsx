@@ -1,7 +1,14 @@
 import { useContext } from "react";
 import { PriceContext } from "../context/priceContext";
 
-const Nav = ({ page, setPage, setPriceSelected, priceSelected }) => {
+const Nav = ({
+  multiplier,
+  page,
+  setPage,
+  setPriceSelected,
+  priceSelected,
+  setPrice,
+}) => {
   const Styles = {
     container: `
       flex 
@@ -45,7 +52,17 @@ const Nav = ({ page, setPage, setPriceSelected, priceSelected }) => {
 
   const price = useContext(PriceContext);
   const handleBack = () => {
-    setPriceSelected(priceSelected.filter(a => indexOf(a) != indexOf(-1)))
+    console.log(priceSelected);
+    const newPriceSelected = priceSelected.filter(
+      (_, index) => index !== priceSelected.length - 1,
+    );
+    setPriceSelected(newPriceSelected);
+    if (priceSelected.length > 1) {
+      const newPrice = newPriceSelected.reduce((a, b) => a + b);
+      setPrice(newPrice * multiplier);
+    } else {
+      setPrice(0);
+    }
     setPage(page - 1);
   };
 
