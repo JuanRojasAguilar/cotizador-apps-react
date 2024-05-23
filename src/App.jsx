@@ -3,6 +3,7 @@ import { PriceContext } from "./context/priceContext";
 import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import Question from "./components/Question";
+import Footer from "./components/Footer";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -13,11 +14,12 @@ const App = () => {
 
   const Styles = {
     app: `
-      bg-[#3d3935]
+      bg-[#030a29]
       w-screen
       min-h-screen
       text-white
       z-0
+
     `,
   };
 
@@ -25,12 +27,12 @@ const App = () => {
     setStarted(true);
   };
   return (
-    <>
-      {(!started && page < 11) ? (
-        <Landing onClick={startQuestions} />
-      ) : (
-        <div className={Styles.app}>
-          <PriceContext.Provider value={price}>
+    <div className={Styles.app}>
+      <PriceContext.Provider value={price}>
+        {(!started) ? (
+          <Landing onClick={startQuestions} />
+        ) : (
+          <>
             <Nav
               multiplier={multiplier}
               page={page}
@@ -49,14 +51,12 @@ const App = () => {
               priceSelected={priceSelected}
               setPriceSelected={setPriceSelected}
             />
-          </PriceContext.Provider>
-        </div>
-      )}
-      {(!started && page >= 11)
-        ? <p>Reporte</p>
-        : <></>
-      }
-    </>
+          </>
+        )}
+        {(page == 11) && <p>Reporte</p>}
+        <Footer />
+      </PriceContext.Provider>
+    </div>
   );
 };
 
