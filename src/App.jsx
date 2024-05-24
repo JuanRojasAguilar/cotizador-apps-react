@@ -11,6 +11,7 @@ const App = () => {
   const [page, setPage] = useState(1);
   const [multiplier, setMultiplier] = useState(0);
   const [priceSelected, setPriceSelected] = useState([]);
+  const [questionsSelected, setQuestionsSelected] = useState([]);
 
   const Styles = {
     app: `
@@ -50,6 +51,8 @@ const App = () => {
               setPage={setPage}
               priceSelected={priceSelected}
               setPriceSelected={setPriceSelected}
+              questionsSelected={questionsSelected}
+              setQuestionsSelected={setQuestionsSelected}
             />
           </>
         )}

@@ -7,7 +7,9 @@ const Question = ({
   page,
   setPage,
   priceSelected,
-  setPriceSelected
+  setPriceSelected,
+  questionsSelected,
+  setQuestionsSelected
 }) => {
   let data;
   if (page != 11) {
@@ -55,12 +57,15 @@ const Question = ({
     `,
   };
 
-  const handleClick = (newPrice) => {
+  const handleClick = ({ cost, text }) => {
     let calc = 0;
-    let newPriceSelected = [...priceSelected, newPrice];
+    const newPriceSelected = [...priceSelected, cost];
+    const answer = { cost: cost, text: text };
+    const newQuestionSelected = [...questionsSelected, answer]
+
 
     if (page == 1) {
-      setMultiplier(newPrice);
+      setMultiplier(cost);
     } else if (page == 2) {
       setPriceSelected(newPriceSelected)
       calc = newPriceSelected[0]; 
@@ -68,9 +73,12 @@ const Question = ({
       setPriceSelected(newPriceSelected);
       calc = priceSelected.reduce((a, b) => a + b);
     }
+    setQuestionsSelected(newQuestionSelected);
+    console.log(questionsSelected);
     setPrice(calc * multiplier);
     setPage(page + 1);
   };
+
 
   return (
     <div className={Styles.container}>
@@ -81,7 +89,7 @@ const Question = ({
             <button
               className={Styles.button}
               key={option.text}
-              onClick={() => handleClick(option.cost)}
+              onClick={() => handleClick(option)}
             >
               <img src={option.image} className={Styles.image} />
               {option.text}

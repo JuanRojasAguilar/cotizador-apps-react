@@ -3,7 +3,7 @@ const Landing = ({ onClick }) => {
     container: `
       w-screen
       h-screen
-      bg-[#3d3935]
+      bg-[#030a29]
       z-10
       text-white
       flex

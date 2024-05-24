@@ -2,14 +2,14 @@ import "./footer.css";
 
 const Footer = () => {
     return (
-        <div class="todoInfo">
-            <div class="info">
+        <div className="todoInfo">
+            <div className="info">
 
-                <div class="parte1">
-                    <div class="titulo">
+                <div className="parte1">
+                    <div className="titulo">
                         <h1>¿Cuánto cuesta hacer una app?</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>¿Te estás preguntando cuánto valdría crear tu aplicación? ¡Entonces estás en el lugar adecuado!
                             Esta es una herramienta digital impulsada por Yeeply que puedes utilizar, de forma totalmente
                             gratuita, para calcular el costo de tu aplicación.Es muy sencilla de utilizar. En primer lugar,
@@ -23,11 +23,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte2">
-                    <div class="titulo">
+                <div className="parte2">
+                    <div className="titulo">
                         <h1>Factores que influyen en el costo de una app</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>Ten en cuenta todos los factores de esta lista a la hora de calcular cuánto cuesta hacer una app:
                             Funcionalidades: cuanto más compleja sea tu app, más costosa será de desarrollar. Por ejemplo,
                             si quieres añadir a tu aplicación un sistema de mensajería, como un chat en tiempo real con
@@ -58,11 +58,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte3">
-                    <div class="titulo">
+                <div className="parte3">
+                    <div className="titulo">
                         <h1>Cuánto cuesta crear un app según el tipo de desarrollo</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>Cuando empieces a hablar con un equipo de desarrollo estos te plantearán varias opciones para el
                             diseño de tu app. Existen tres tipos de desarrollo que debes conocer:
                             Aplicación nativa. Estas apps están desarrolladas específicamente para un sistema operativo,
@@ -88,11 +88,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte4">
-                    <div class="titulo">
+                <div className="parte4">
+                    <div className="titulo">
                         <h1>Cuánto cuesta desarrollar una app según el sistema operativo</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>Otra decisión que deberás tomar a la hora de desarrollar una app para mejorar tu negocio es en
                             qué sistema operativo quieres que se muestre.El costo de tu app será diferente
                             dependiendo de si está creada para iOS, Android o Windows Phone. También será muy diferente si
@@ -110,11 +110,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte5">
-                    <div class="titulo">
+                <div className="parte5">
+                    <div className="titulo">
                         <h1>¿Cuál es el plazo estimado para desarrollar una aplicación?</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>Desarrollar una aplicación no es cuestión de días. Como ya te habrás dado cuenta con todo lo que
                             hemos explicado, primero debes tomar muchas decisiones (tipo de desarrollo, tipo de app, sistema
                             operativo…). Cuando todo esto esté claro, podrás pasar a la fase de diseño y trabajar mockups y
@@ -129,11 +129,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte6">
-                    <div class="titulo">
+                <div className="parte6">
+                    <div className="titulo">
                         <h1>¿Es una buena idea ofrecer tu app de forma gratuita?</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>Si estás creando una app para el consumidor final (en vez de una app interna, por ejemplo),
                             seguro que te has parado a pensar en su monetización. Empieza por analizar a fondo a tus
                             competidores y ver qué están haciendo.¿Qué pasa si tus competidores ofrecen una app similar de
@@ -146,11 +146,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte7">
-                    <div class="titulo">
+                <div className="parte7">
+                    <div className="titulo">
                         <h1>¿Beneficios de hacer un app para tu negocio</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>Existen muchas razones por las cuales puedes lanzarte a hacer una app para tu negocio. Estas son
                             algunas:
                             Un app es la mejor solución si tu clientela necesita reservar una cita contigo para ser
@@ -178,10 +178,10 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte8">
+                <div className="parte8">
 
-                    <div class="caja1">
-                        <div class="titulo">PROBLEMA DETECTADO</div>
+                    <div className="caja1">
+                        <div className="titulo">PROBLEMA DETECTADO</div>
                         <p>Gestión de informes lenta</p>
                         <p>Compras abandonadas y visitas breves en dispositivos móviles</p>
                         <p>Organización de turnos y vacaciones poco eficiente</p>
@@ -193,8 +193,8 @@ const Footer = () => {
                         <p>Otro problema detectado</p>
                     </div>
 
-                    <div class="caja2">
-                        <div class="titulo">TIPO DE APP / SOLUCIÓN</div>
+                    <div className="caja2">
+                        <div className="titulo">TIPO DE APP / SOLUCIÓN</div>
                         <p>Apps de gestión</p>
                         <p>Apps m-commerce</p>
                         <p>Comunicación interna</p>
@@ -206,8 +206,8 @@ const Footer = () => {
                         <p>Consultoría para encontrar una solución a medida</p>
                     </div>
 
-                    <div class="caja3">
-                        <div class="titulo">OBJETIVO A LOGRAR</div>
+                    <div className="caja3">
+                        <div className="titulo">OBJETIVO A LOGRAR</div>
                         <p>Gestionar los informes</p>
                         <p>Aumentar ventas desde dispositivos móviles</p>
                         <p>Organización más efectiva</p>
@@ -220,11 +220,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte9">
-                    <div class="titulo">
+                <div className="parte9">
+                    <div className="titulo">
                         <h1>Opciones para hacer una app</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>¿Te queda algo más clara la forma de desarrollo que te interesa para tu aplicación y sabes cuánto
                             cuesta crear una app aproximadamente? Si la respuesta es afirmativa, quizás ha llegado el
                             momento de ponernos en marcha con el siguiente paso: comenzar con tu proyecto de aplicación
@@ -289,11 +289,11 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div class="parte10">
-                    <div class="titulo">
+                <div className="parte10">
+                    <div className="titulo">
                         <h1>¿Cómo empezar tu proyecto con Yeeply?</h1>
                     </div>
-                    <div class="texto">
+                    <div className="texto">
                         <p>¿Estás preparado para comenzar? Cuéntanos lo que necesitas para poner en marcha tu proyecto de
                             app en el siguiente enlace. Simplemente necesitamos que contestes a las preguntas del formulario
                             habilitado para ello.Una vez recibido el formulario contactaremos contigo para solventar
