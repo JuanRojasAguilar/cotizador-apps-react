@@ -1,7 +1,11 @@
 import "boxicons";
+import { useContext } from "react";
+import { PriceContext } from "../context/priceContext";
 
 // eslint-disable-next-line react/prop-types
 const Report = ({ onClick }) => {
+    const price = useContext(priceContext);
+
     const Styles = {
       container: `
         z-10
@@ -21,7 +25,7 @@ const Report = ({ onClick }) => {
         text-[50px]
         text-center
       `,
-      facebookButton: `
+      socialButton: `
         py-[0.5rem]
         px-3
         flex
@@ -48,31 +52,27 @@ const Report = ({ onClick }) => {
           <p>¡Bien! ¡Hemos terminado!</p>
           <h5>¡Compartenos si te ha gustado!</h5>
           <div className='flex gap-12'>
-            <button className={Styles.facebookButton + `bg-sky-500`}>
+            <button className={Styles.socialButton + `bg-sky-500`}>
               <box-icon type='logo' name='facebook' color='white'></box-icon>
               Share
             </button>
-            <button className={Styles.facebookButton + `bg-sky-300`}>
+            <button className={Styles.socialButton + `bg-sky-300`}>
               <box-icon name='linkedin' type='logo' color='white'></box-icon>
               Share
             </button>
-            <button>
-                <img src="" alt="google share" />
-                Google +
+            <button className={Styles.socialbutton + `bg-black`}>
+                <box-icon type='logo' name='twitter' color='white'></box-icon>
+                Tweet
             </button>
             <button>
                 <img src="" alt="x share" />
                 Tweet
             </button>
         </div>
-          <h1 className={Styles.title}>
-            Cuanto cuesta desarrollar mi{' '}
-            <span className="text-[#14e2cd]">app</span>?
-          </h1>
-          <p className="text-[16px]">
-            Calcula de forma rapida el costo para crear tu app, contestando estas
-            sencillas preguntas.
-          </p>
+          <h3 className={Styles.title}>
+            Tu app costaria:
+          </h3>
+          <h2 className="text-[16px] text-[#14e2cd]">{price}</h2>
           <button className={Styles.button} onClick={onClick}>
             Crea tu proyecto
           </button>
