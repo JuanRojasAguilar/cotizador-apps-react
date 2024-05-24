@@ -4,7 +4,7 @@ import { PriceContext } from "../context/priceContext";
 
 // eslint-disable-next-line react/prop-types
 const Report = ({ onClick }) => {
-    const price = useContext(priceContext);
+    const price = useContext(PriceContext);
 
     const Styles = {
       container: `
@@ -31,6 +31,7 @@ const Report = ({ onClick }) => {
         flex
         align-center
         rounded
+        gap-2
       `,
       button: `
         bg-gradient-to-l from-[#7a56f4] to-[#14e2cd]
@@ -60,12 +61,8 @@ const Report = ({ onClick }) => {
               <box-icon name='linkedin' type='logo' color='white'></box-icon>
               Share
             </button>
-            <button className={Styles.socialbutton + `bg-black`}>
+            <button className={Styles.socialButton + `bg-black`}>
                 <box-icon type='logo' name='twitter' color='white'></box-icon>
-                Tweet
-            </button>
-            <button>
-                <img src="" alt="x share" />
                 Tweet
             </button>
         </div>
