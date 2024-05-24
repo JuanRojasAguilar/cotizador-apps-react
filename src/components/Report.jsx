@@ -1,9 +1,9 @@
+import "boxicons";
+
+// eslint-disable-next-line react/prop-types
 const Report = ({ onClick }) => {
     const Styles = {
       container: `
-        w-screen
-        h-screen
-        bg-[#3d3935]
         z-10
         text-white
         flex
@@ -20,6 +20,13 @@ const Report = ({ onClick }) => {
       title: `
         text-[50px]
         text-center
+      `,
+      facebookButton: `
+        py-[0.5rem]
+        px-3
+        flex
+        align-center
+        rounded
       `,
       button: `
         bg-gradient-to-l from-[#7a56f4] to-[#14e2cd]
@@ -40,14 +47,14 @@ const Report = ({ onClick }) => {
         <div className={Styles.textContainer}>
           <p>¡Bien! ¡Hemos terminado!</p>
           <h5>¡Compartenos si te ha gustado!</h5>
-          <div>
-            <button>
-                <img src="" alt="facebook share" />
-                Share
+          <div className='flex gap-12'>
+            <button className={Styles.facebookButton + `bg-sky-500`}>
+              <box-icon type='logo' name='facebook' color='white'></box-icon>
+              Share
             </button>
-            <button>
-                <img src="" alt="linkedin share" />
-                Share
+            <button className={Styles.facebookButton + `bg-sky-300`}>
+              <box-icon name='linkedin' type='logo' color='white'></box-icon>
+              Share
             </button>
             <button>
                 <img src="" alt="google share" />

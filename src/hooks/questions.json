@@ -3,17 +3,17 @@
     "question": "¿Que nivel de calidad estas buscando?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-1-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/work-icon-png-11671639610bthh94ekjt.png",
         "text": "Calidad Optima",
         "cost": 3
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-1-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/work-destination-icon-png-11671639550injgezofko.png",
         "text": "Buena relacion calidad/precio",
         "cost": 2
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-1-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/windy-road-icon-png-116716395039in2kl0km9.png",
         "text": "No me importa tanto la calidad",
         "cost": 1
       }
@@ -23,22 +23,22 @@
     "question": "¿Que tipo de App necesitas?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-2-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/unsealed-road-icon-png-11671639450zstrc4wsh7.png",
         "text": "Aplicacion Android",
         "cost": 3000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-2-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/traffic-light-icon-png-11671639400vff9y9ecq0.png",
         "text": "Aplicacion iOS",
         "cost": 3000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-2-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/toll-road-icon-png-11671639367owm7lgsqtw.png",
         "text": "Aplicacion Windows Phone",
         "cost": 3000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-2-4.png",
+        "image": "https://pngfile.net/public/uploads/preview/toll-road-icon-png-11671639337mfp7jmmxio.png",
         "text": "Aplicacion Android + iOS",
         "cost": 5000000
       }
@@ -48,22 +48,22 @@
     "question": "¿Que diseño quieres que tenga tu App?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-3-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/street-view-icon-png-11671639292ijf8dj3c6e.png",
         "text": "Interfaz sencilla",
         "cost": 2000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-3-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/speed-trap-icon-png-11671639258u96v7exjjs.png",
         "text": "Interfaz personalizada",
         "cost": 6000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-3-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/shopping-destination-icon-png-11671639175trs5rwaa6d.png",
         "text": "Interfaz replica de la web",
         "cost": 4000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-3-4.png",
+        "image": "https://pngfile.net/public/uploads/preview/sharp-bend-icon-png-11671639136jweuylpv5d.png",
         "text": "No necesito diseño",
         "cost": 0
       }
@@ -73,22 +73,22 @@
     "question": "¿Como quieres sacar beneficio a tu App?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-4-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/searching-destination-icon-png-116716390841psxy4e3de.png",
         "text": "Aplicacion gratuita con publicidad",
         "cost": 250000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-4-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/searching-airport-icon-png-116716390134gaptemuzz.png",
         "text": "Aplicacion de pago",
         "cost": 250000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-4-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/search-map-icon-png-11671638964jfaq0bpqdy.png",
         "text": "Compras dentro de la app",
         "cost": 2000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-4-4.png",
+        "image": "https://pngfile.net/public/uploads/preview/sealed-road-icon-png-11671638888q04fpoc1je.png",
         "text": "Otros / No lo sé todavia",
         "cost": 500000
       }
@@ -98,22 +98,22 @@
     "question": "¿Tu App necesita un sistema de login?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-5-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/satellite-icon-png-11671638850vdwd2bdbt6.png",
         "text": "Si, con redes sociales y email",
         "cost": 2000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-5-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/route-map-icon-png-116716385018uh1v2as43.png",
         "text": "Si, con email",
         "cost": 1250000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-5-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/route-map-icon-png-11671638488pgllxphzhv.png",
         "text": "No",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-5-4.png",
+        "image": "https://pngfile.net/public/uploads/preview/route-map-icon-png-11671638474bhcff91e02.png",
         "text": "No lo sé todavia",
         "cost": 1000000
       }
@@ -123,17 +123,17 @@
     "question": "¿Tu App tiene que estar integrada con un sitio web?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-6-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/route-map-icon-png-11671638456udy7ewmhvw.png",
         "text": "Si",
         "cost": 2000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-6-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/roundabout-icon-png-11671638405vxdwehgwtm.png",
         "text": "No",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-6-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/roadworks-icon-png-11671638333co27w4g1xm.png",
         "text": "No lo se",
         "cost": 1000000
       }
@@ -143,17 +143,17 @@
     "question": "¿Los usuarios tienen sus propios perfiles?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-7-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/roadside-icon-png-11671638266jdu2ybnnj3.png",
         "text": "Si",
         "cost": 2000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-7-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/road-split-icon-png-11671638225uu6fkd8mct.png",
         "text": "No",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-7-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/road-sign-billboard-icon-11671638177dwsrofl3lu.png",
         "text": "No lo sé",
         "cost": 1000000
       }
@@ -163,17 +163,17 @@
     "question": "¿Tu app necesita un panel de administracion?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-8-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/road-ramps-icon-11671638119icx6uwgnti.png",
         "text": "Si",
         "cost": 2000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-8-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/road-construction-icon-png-11671638065jxctoqhacc.png",
         "text": "No",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-8-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/radar-icon-png-11671637968zyx253wu8t.png",
         "text": "No lo sé",
         "cost": 1000000
       }
@@ -183,17 +183,17 @@
     "question": "¿Que idiomas usara tu aplicacion?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-9-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/point-of-interest-icon-png-116716377794xwfsvq53o.png",
         "text": "Un unico idioma",
         "cost": 1
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-9-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/point-of-interest-icon-png-11671637759wsqzaekv5k.png",
         "text": "Bilingue",
         "cost": 1000000
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-9-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/point-of-interest-icon-png-116716377981pyvhtakt9.png",
         "text": "Multilingue",
         "cost": 2000000
       }
@@ -203,22 +203,22 @@
     "question": "¿En que estado se encuentra tu proyecto?",
     "options": [
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-10-1.png",
+        "image": "https://pngfile.net/public/uploads/preview/nautical-wheel-icon-png-11671616328omiwzfzrkj.png",
         "text": "Solo es una idea",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-10-2.png",
+        "image": "https://pngfile.net/public/uploads/preview/point-of-interest-icon-png-11671637725liekrlpphq.png",
         "text": "App en desarrollo",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-10-3.png",
+        "image": "https://pngfile.net/public/uploads/preview/point-of-interest-icon-png-11671637705cwnd6luusp.png",
         "text": "Boceto ya preparado",
         "cost": 0
       },
       {
-        "image": "https://www.cuantocuestamiapp.co/img/app/answer-10-4.png",
+        "image": "https://pngfile.net/public/uploads/preview/point-of-interest-icon-png-11671637673vnmzwga651.png",
         "text": "App ya desarrollada",
         "cost": 0
       }

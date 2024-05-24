@@ -4,6 +4,8 @@ import Nav from "./components/Nav";
 import Landing from "./components/Landing";
 import Question from "./components/Question";
 import Footer from "./components/Footer";
+import Report from "./components/Report";
+import useMockApi from "./hooks/useMockApi";
 
 const App = () => {
   const [started, setStarted] = useState(false);
@@ -22,7 +24,18 @@ const App = () => {
       z-0
 
     `,
+    infoContainer: `
+      w-full
+      h-screen
+    `
   };
+
+  const { postAnswers } = useMockApi();
+
+  const sendAnswers = () => {
+    const obj = [questionsSelected];
+    postAnswers(obj)
+  }
 
   const startQuestions = () => {
     setStarted(true);
@@ -30,33 +43,35 @@ const App = () => {
   return (
     <div className={Styles.app}>
       <PriceContext.Provider value={price}>
-        {(!started) ? (
-          <Landing onClick={startQuestions} />
-        ) : (
-          <>
-            <Nav
-              multiplier={multiplier}
-              page={page}
-              setPage={setPage}
-              priceSelected={priceSelected}
-              setPrice={setPrice}
-              setPriceSelected={setPriceSelected}
-            />
-            <Question
-              multiplier={multiplier}
-              setMultiplier={setMultiplier}
-              price={price}
-              setPrice={setPrice}
-              page={page}
-              setPage={setPage}
-              priceSelected={priceSelected}
-              setPriceSelected={setPriceSelected}
-              questionsSelected={questionsSelected}
-              setQuestionsSelected={setQuestionsSelected}
-            />
-          </>
-        )}
-        {(page == 11) && <p>Reporte</p>}
+        <div className={Styles.infoContainer}>
+          {(!started && page < 11) ? (
+            <Landing onClick={startQuestions} />
+          ) : (
+            <>
+              <Nav
+                multiplier={multiplier}
+                page={page}
+                setPage={setPage}
+                priceSelected={priceSelected}
+                setPrice={setPrice}
+                setPriceSelected={setPriceSelected}
+              />
+              <Question
+                multiplier={multiplier}
+                setMultiplier={setMultiplier}
+                price={price}
+                setPrice={setPrice}
+                page={page}
+                setPage={setPage}
+                priceSelected={priceSelected}
+                setPriceSelected={setPriceSelected}
+                questionsSelected={questionsSelected}
+                setQuestionsSelected={setQuestionsSelected}
+              />
+            </>
+          )}
+          {page == 11 && <Report onClick={() => sendAnswers()}/>}
+        </div>
         <Footer />
       </PriceContext.Provider>
     </div>

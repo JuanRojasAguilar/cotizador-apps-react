@@ -19,8 +19,7 @@ const Question = ({
   }
   const Styles = {
     container: `
-      h-screen
-      w-screen
+      ${page < 11 ? `h-full`: ``}
       pt-12
       flex 
       flex-col
